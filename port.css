@@ -1,0 +1,156 @@
+.navbar .navbar-brand {
+  font-family: "Bevan", serif;
+  font-size: 30px;
+  color: white;
+}
+
+.main {
+  background-image: url("https://clarkebenefits.com/wp-content/uploads/2018/07/family-background.jpg");
+background-attachment: fixed;
+  overflow: hidden;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-1 {
+  background-color: rgba(240, 248, 255, 0.481);
+  height: 100vh;
+  backdrop-filter: blur(2px);
+}
+
+.nav-link {
+  color: white !important;
+  font-family: "Bree Serif", serif;
+}
+
+.main-1 .navbar {
+  background-color: rgba(27, 27, 27, 0.534) !important;
+  backdrop-filter: blur(5px);
+}
+
+.center {
+ 
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes round {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3600deg);
+  }
+}
+
+.button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  border:2px solid #008080;
+}
+
+.button:hover {
+  box-shadow: .5px .5px 150px #252525;
+}
+
+.type1::after {
+  content: "Thanks";
+  height: 50px;
+  width: 150px;
+  background-color: #008080;
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1::before {
+  content: "Contact Me";
+ 
+  height: 50px;
+  width: 150px;
+  background-color: #fff;
+  color: #008080;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1:hover::after {
+  transform: translateY(0) scale(1.2);
+}
+
+.type1:hover::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
+}
+
+
+.navbar button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #000000;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #0f0f0f;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.navbar button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #0f0e0e;
+  z-index: -1;
+}
+
+.navbar button:hover,.navbar button:focus {
+  color: white;
+}
+
+.navbar button:hover:before, .navbar button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.navbar button:active {
+  transform: scale(0.9);
+}
